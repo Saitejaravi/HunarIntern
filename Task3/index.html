@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Netflix Clone</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">NETFLIX</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Movies</a>
+    <a href="#">My List</a>
+  </nav>
+</header>
+
+<main>
+  <section class="row">
+    <h2>Popular Movies</h2>
+    <div class="movie-list" id="popular-movies"></div>
+  </section>
+  <section class="row">
+    <h2>K-Dramas</h2>
+    <div class="movie-list" id="kdramas"></div>
+  </section>
+  <section class="row">
+    <h2>Web Series</h2>
+    <div class="movie-list" id="webseries"></div>
+  </section>
+</main>
+
+<!-- Details modal -->
+<div id="details-modal">
+  <div id="close-btn">&#10005;</div>
+  <div id="details-content">
+    <img id="details-img" src="" alt="Poster" />
+    <div id="details-text">
+      <h3 id="details-title"></h3>
+      <p id="details-description"></p>
+      <button id="play-btn">▶ Play</button>
+    </div>
+  </div>
+</div>
+
+<!-- Video player -->
+<div id="video-player">
+  <video controls id="video" src="" ></video>
+  <div id="video-close">&#10005;</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
